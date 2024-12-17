@@ -40,13 +40,13 @@ This is a solution for the [Caching Server Project](https://roadmap.sh/projects/
 ## Usage
 
 1. **Start the Proxy Server**:
-        python filename.py --port <port-number> --origin <origin-url>
+        python server.py --port <port-number> --origin <origin-url>
     --port: The port on which the proxy server will run.
     --origin: The origin server URL to forward requests to.
 
     Example:
 
-        python filename.py --port 3000 --origin http://dummyjson.com
+        python server.py --port 3000 --origin http://dummyjson.com
     This will start the server at http://localhost:3000, forwarding requests to http://dummyjson.com.
 
 2. **Making Requests**:
@@ -62,4 +62,4 @@ This is a solution for the [Caching Server Project](https://roadmap.sh/projects/
     To clear the cache, run:
 
     ```bash
-    python filename.py --clear-cache
+    python server.py --clear-cache
