@@ -29,9 +29,10 @@ This is a solution for the [Caching Server Project](https://roadmap.sh/projects/
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/rehmansheikh222/caching-proxy.git
+   cd https://github.com/rehmansheikh222/caching-proxy.git
 2. **Install Dependencies**:
+    ```bash
     pip install -r requirements.txt
 
 ---
