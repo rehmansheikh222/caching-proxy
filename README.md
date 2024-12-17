@@ -39,15 +39,15 @@ This is a solution for the [Caching Server Project](https://roadmap.sh/projects/
 ## Usage
 
 1. **Start the Proxy Server**:
-   ```bash
-    python filename.py --port <port-number> --origin <origin-url>
+        ```bash
+        python filename.py --port <port-number> --origin <origin-url>
     --port: The port on which the proxy server will run.
     --origin: The origin server URL to forward requests to.
 
     Example:
 
-    ```bash
-    python filename.py --port 3000 --origin http://dummyjson.com
+        ```bash
+        python filename.py --port 3000 --origin http://dummyjson.com
     This will start the server at http://localhost:3000, forwarding requests to http://dummyjson.com.
 
 2. **Making Requests**:
@@ -55,8 +55,8 @@ This is a solution for the [Caching Server Project](https://roadmap.sh/projects/
 
     Example:
 
-    ```bash
-    curl -i http://localhost:3000/products
+        ```bash
+        curl -i http://localhost:3000/products
     On First Request: The response is fetched from the origin and cached (X-Cache: MISS).
     On Subsequent Requests: The cached response is returned (X-Cache: HIT).
 
@@ -65,4 +65,3 @@ This is a solution for the [Caching Server Project](https://roadmap.sh/projects/
 
     ```bash
     python filename.py --clear-cache
-    
